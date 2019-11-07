@@ -91,10 +91,10 @@ section {
   height: 500px;
   object-fit: cover;
   margin-left: 30%;
-  filter: drop-shadow(5px 5px 10px #666);
+  filter: drop-shadow(5px 5px 10px #666)grayscale(70%);
   border-radius: 10px;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(70%);
+  /* -webkit-filter: grayscale(100%); */
+  /* filter: grayscale(70%); */
 }
 .mainvisual h2 {
   position: absolute;
@@ -116,4 +116,33 @@ section {
   left: 0;
   z-index: -1;
   border-radius: 10px;
+}
+
+.greeting h2{
+    margin-bottom: 50px;
+    text-align: center;
+}
+.greeting .contents{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+}
+.greeting .contents figure{
+    width: 50%;
+}
+.content{
+    background-color: rgb(244, 250, 158);
+    /* filter: drop-shadow(5px 5px 10px #666); */
+    border-radius: 10px;
+
+}
+.greeting .content{
+    width: 48%;
+}
+.contents img{
+    filter: grayscale(50%)drop-shadow(5px 5px 10px #666);
+    border-radius: 10px;
+    /* filter: drop-shadow(5px 5px 10px #666); */
 }
