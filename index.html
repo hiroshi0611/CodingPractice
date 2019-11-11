@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <title>Document</title>
 </head>
 
@@ -141,6 +143,27 @@
         </div>
 
     </footer>
+    <div id="page_top"><a href="#"></a></div>
+    <script>
+        $(function () {
+            let pagetop = $('#page_top');
+            pagetop.hide();
+
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 500) {
+                    pagetop.fadeIn();
+                } else {
+                    pagetop.fadeOut();
+                }
+            });
+            pagetop.click(function () {
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 500);
+                return false;
+            })
+        })
+    </script>
 </body>
 
 </html>
